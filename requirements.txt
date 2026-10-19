@@ -1,0 +1,4 @@
+# Direct dependencies verified on CPython 3.14.8 (Windows x64).
+pandas==3.0.6
+streamlit==1.66.0
+pytest==9.1.1

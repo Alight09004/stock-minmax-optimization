@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dataset": "Huge Stock Market Dataset",
+  "source_url": "https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
+  "source_version": "Local archive; upstream version/checksum not independently verified",
+  "canonical_roots": [
+    "datasets/archive/Stocks"
+  ],
+  "selection": {
+    "tickers": [
+      "aapl.us",
+      "msft.us"
+    ],
+    "start": "2016-01-01",
+    "end": "2017-12-31",
+    "price_column": "Close",
+    "limit": 240,
+    "per_ticker_limit": 120
+  },
+  "ordering": "asset order, filename ascending, date ascending within file; prefix truncation",
+  "series_kind": "aggregate historical price series across tickers",
+  "record_count": 240,
+  "requested_limit_reached": true,
+  "date_min": "2016-01-04",
+  "date_max": "2016-06-23",
+  "ticker_counts": {
+    "Stocks/aapl.us": 120,
+    "Stocks/msft.us": 120
+  },
+  "filtered_date_rows": 15407,
+  "rejected": {},
+  "rejected_total": 0,
+  "rejection_scope": "examined source files only; file-level errors use source_row=0",
+  "sources": [
+    {
+      "path": "datasets/archive/Stocks/aapl.us.txt",
+      "sha256": "28ea6bff6cc5de7b7c9bde7ccf75544ce9e2ae66be32d9057d7cc32525f798e3",
+      "bytes": 428286,
+      "selected_records": 120
+    },
+    {
+      "path": "datasets/archive/Stocks/msft.us.txt",
+      "sha256": "46e6ea467ee59cddb86bf213c396866030cbd386d99b76dd66d1b56d7ae718d8",
+      "bytes": 409074,
+      "selected_records": 120
+    }
+  ],
+  "csv_sha256": "2a4cb7ca10cea902cef45e31c5eb6b28416aa7b15d21fb4e701cfa3d61154fbc"
+}
